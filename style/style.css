@@ -1,0 +1,392 @@
+/* ------------------------------ */
+/* BASE                          */
+/* ------------------------------ */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  text-align: center;
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+
+
+/* ------------------------------ */
+/* HEADER                        */
+/* ------------------------------ */
+header {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+/* ------------------------------ */
+/* UTILITÁRIOS                   */
+/* ------------------------------ */
+
+.title-container {
+    animation: appear 1s;
+}
+
+
+.img-perfil {
+  animation: appear 1s;
+  animation-timeline: view();
+  animation-range: cover 0% cover 50% ;
+}
+
+.sobre {
+  animation: appear 1s;
+  animation-timeline: view();
+  animation-range: cover 0% cover 50% ;
+}
+
+.tech-item {
+  animation: appear 1s;
+  animation-timeline: view();
+}
+
+.tech-skills {
+  animation: appear 1s;
+  animation-timeline: view();
+  animation-range: cover 0% cover 50% ;
+}
+
+.projetos {
+  animation: appear 1s;
+  animation-timeline: view();
+  animation-range: cover 0% cover 50% ;
+}
+
+.educacao {
+  animation: appear 1s;
+  animation-timeline: view();
+  animation-range: cover 0% cover 50% ;
+}
+
+.experiencia {
+  animation: appear 1s;
+  animation-timeline: view();
+  animation-range: cover 0% cover 50% ;
+}
+
+.contato {
+  animation: appear 1s;
+  animation-timeline: view();
+  animation-range: cover 0% cover 50% ;
+}
+.social-buttons {
+  animation: appear 1s;
+} 
+
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 5px rgba(0, 76, 255, 2.61);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 179, 255, 6.8);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(0, 47, 255, 2.837);
+  }
+}
+
+/* ------------------------------ */
+/* TÍTULO                        */
+/* ------------------------------ */
+.title-container {
+  max-width: 800px;
+  margin: 10% auto 0;
+  text-align: center;
+}
+
+.title-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 0 0 8px #00aeff;
+}
+
+.title-container p {
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  color: #ffffffcc;
+  text-shadow: 0 0 5px #00aeff88;
+}
+
+/* ------------------------------ */
+/* SEÇÕES                        */
+/* ------------------------------ */
+section {
+  padding: 40px 20px;
+  margin-top: 80px;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 0 0 8px #00aeff;
+}
+
+/* ------------------------------ */
+/* BOTÕES                        */
+/* ------------------------------ */
+button {
+  background: rgb(255, 255, 255);
+  color: #000000;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  box-shadow: 0 0 10px rgba(0, 149, 255, 0.4);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  border: none;
+  margin: 10px;
+  animation: pulseGlow 2s infinite;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background: #00aeff;
+  box-shadow: 0 0 20px #00aeff;
+}
+
+
+/* ------------------------------ */
+/* TECH SKILLS                   */
+/* ------------------------------ */
+.tech-skills {
+  margin: 50px auto;
+  max-width: 900px;
+  text-align: center;
+}
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.tech-item {
+  background: rgba(255, 255, 255, 0.826);
+  color: #000000;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  box-shadow: 0 0 10px rgba(0, 174, 255, 0.4);
+  transition: transform 0.3s ease;
+  cursor: default;
+}
+
+.tech-item:hover {
+  transform: scale(1.1);
+  background: #00aeff;
+  box-shadow: 0 0 20px #00aeff;
+}
+
+/* ------------------------------ */
+/* PROJETOS                      */
+/* ------------------------------ */
+.projetos {
+  margin-top: 80px;
+}
+
+.projetos img {
+  max-width: 70%;
+  height: auto;
+  border-radius: 12px;
+  margin: 50px auto 0;
+  box-shadow: 0 4px 15px rgba(0, 174, 255, 0.4);
+  display: block;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  margin: 15px;
+  padding: 20px;
+  width: 300px;
+}
+
+/* ------------------------------ */
+/* PERFIL                        */
+/* ------------------------------ */
+.perfil-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+  gap: 50px;
+  margin-top: 80px;
+  padding: 20px;
+}
+
+.img-perfil img, .Imagem1 {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 20px 5px rgb(0, 204, 255);
+  transition: transform 0.3s ease-in-out;
+}
+
+.img-perfil img:hover {
+  transform: scale(1.05);
+}
+
+.Imagem1 {
+  height: 295px;
+  border-radius: 200px;
+  margin: 20px auto;
+  display: block;
+}
+
+/* ------------------------------ */
+/* ÁREAS COM IMAGENS             */
+/* ------------------------------ */
+.areas {
+  background: #fff;
+  margin: 100px auto 0;
+  box-shadow: 0 0 10px rgba(157, 157, 157, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  max-width: 1200px;
+  flex-wrap: wrap;
+}
+
+.areas img {
+  width: 200px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ------------------------------ */
+/* SOCIAL MEDIA ICONS            */
+/* ------------------------------ */
+.social-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.social {
+  width: 60px;
+  height: 60px;
+  font-size: 1.5rem;
+  color: #000;
+  background: #fff;
+  border-radius: 50%;
+  transition: transform 0.3s;
+  text-decoration: none;
+  box-shadow: 0 0 10px rgba(0, 174, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.social:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 20px #00aeff;
+}
+
+.insta:hover { color: #e4405f; }
+.face:hover { color: #1877f2; }
+.twitter:hover { color: #1da1f2; }
+.linkedin:hover { color: #0e76a8; }
+
+/* ------------------------------ */
+/* RODAPÉ                        */
+/* ------------------------------ */
+footer {
+  background-color: #000;
+  color: white;
+  padding: 10px;
+}
+
+/* ------------------------------ */
+/* RESPONSIVIDADE                */
+/* ------------------------------ */
+@media screen and (max-width: 480px) {
+  button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .social-buttons {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .social {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+
+  .title-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .title-container p {
+    font-size: 1rem;
+  }
+
+  section h2 {
+    font-size: 1.8rem;
+  }
+
+  .tech-item {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project {
+    width: 90%;
+  }
+
+  .projetos img {
+    max-width: 90%;
+  }
+
+  footer {
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+}
+

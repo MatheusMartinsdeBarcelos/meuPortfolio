@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matheus Barcelos</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Poiret+One&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style/style.css" />
+  <link rel="stylesheet" href="./output.css" />
+
+  <!-- Smooth Scroll -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="animate-on-scroll">
+    <a href="#sobre"><button>Sobre Mim</button></a>
+    <a href="#educacao"><button>Educação</button></a>
+    <a href="#contato"><button>Contato</button></a>
+    <a href="#experiencia"><button>Experiência</button></a>
+  </header>
+
+  <div class="title-container animate-on-scroll">
+    <h1>Matheus Martins de Barcelos</h1>
+    <p>Desenvolvedor de Software</p>
+  </div>
+
+  <div class="social-buttons animate-on-scroll">
+    <a href="https://www.instagram.com/matheussbarceloss" target="_blank" class="social insta"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/matheusmartinsdebarcelos" target="_blank" class="social linkedin"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://www.github.com/MatheusMartinsdeBarcelos" target="_blank" class="social github"><i class="fab fa-github"></i></a>
+  </div>
+
+  <section class="perfil animate-on-scroll">
+    <div class="perfil-container">
+      <div class="img-perfil">
+        <img src="./img/Imagem do WhatsApp de 2025-06-06 à(s) 13.50.36_de5fc81f.jpg" alt="Foto de Perfil" />
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="sobre animate-on-scroll">
+    <h2>Sobre Mim</h2>
+    <p>Oi! Meu nome é Matheus, sou programador apaixonado por aprender e resolver problemas. Gosto de trabalhar em equipe e sempre busco melhorar minhas habilidades para entregar o melhor em cada projeto.</p>
+    <p>Meu objetivo é crescer na área, ganhar experiência prática e contribuir de forma positiva para o time.</p>
+  </section>
+
+  <section class="tech-skills animate-on-scroll">
+    <h2>Tecnologias e Habilidades</h2>
+    <div class="tech-list">
+      <span class="tech-item">Java</span>
+      <span class="tech-item">Spring Boot</span>
+      <span class="tech-item">JavaScript</span>
+      <span class="tech-item">React</span>
+      <span class="tech-item">HTML</span>
+      <span class="tech-item">CSS</span>
+      <span class="tech-item">SQL</span>
+      <span class="tech-item">Git</span>
+      <span class="tech-item">Docker</span>
+      <span class="tech-item">Python</span>
+      <span class="tech-item">Figma</span>
+      <span class="tech-item">Notion</span>
+    </div>
+  </section>
+
+  <section class="projetos animate-on-scroll">
+    <h2>Projetos</h2>
+    <h3>Projeto Caramelo's</h3>
+    <p>O Projeto Caramelo’s é um sistema web desenvolvido com o objetivo de gerenciar as operações de um petshop.</p>
+     <p>
+      <strong>Tecnologias usadas:</strong> Java, Spring Boot, PostgreSQL, HTML, CSS e JavaScript.
+    </p>
+    <img src="./img/Captura de tela 2025-06-01 175317.png" alt="Imagem do Projeto Caramelo's" />
+  </section>
+
+  <section id="educacao" class="educacao animate-on-scroll">
+    <h2>Educação</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Faculdade Senac Goiás</h3>
+        <p><strong>2023–2025</strong> — Análise e Desenvolvimento de Sistemas</p>
+        <h3>Colégio Integrado Jaó</h3>
+        <p><strong>2015–2021</strong> — Ensino Fundamental e Médio Completo</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experiencia" class="experiencia animate-on-scroll">
+    <h2>Experiência</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Centi Soluções</h3>
+        <p><strong>2025</strong> — Estagiário em Suporte e Análise de Sistemas</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="contato animate-on-scroll">
+    <h2>Contato</h2>
+    <div class="social-buttons">
+      <a href="https://www.instagram.com/matheussbarceloss" target="_blank" class="social insta"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/matheusmartinsdebarcelos" target="_blank" class="social linkedin"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.github.com/MatheusMartinsdeBarcelos" target="_blank" class="social github"><i class="fab fa-github"></i></a>
+    </div>
+  </section>
+
+  <footer class="animate-on-scroll">
+    <p>&copy; 2025 Matheus Martins de Barcelos</p>
+  </footer>
+
+  <!-- SCRIPT DE ANIMAÇÃO -->
+  <script>
+    const animatedItems = document.querySelectorAll('.animate-on-scroll');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('appear');
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+
+    animatedItems.forEach(item => observer.observe(item));
+  </script>
+</body>
+</html>
